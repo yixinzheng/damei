@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大美艺术-首页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="head-box">
+    <img src="images/logo.png" alt="" class="head-logo">
+    <div class="head-itemBox">
+        <a href="dmart.html" class="head-item">dmart</a>
+        <a href="index.html" class="head-item active">home</a>
+    </div>
+</div>
+<div class="mt3"></div>
+<div class="swiper-container swiper-index">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide index-banner">
+            <img src="images/index-banner.png" alt="">
+        </div>
+        <div class="swiper-slide index-banner">
+            <img src="images/index-banner.png" alt="">
+        </div>
+        <div class="swiper-slide index-banner">
+            <img src="images/index-banner.png" alt="">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="index-scrollBox nsb">
+    <div class="index-scroll"></div>
+    <div class="index-scroll"></div>
+    <div class="index-scroll"></div>
+    <div class="index-scroll"></div>
+</div>
+<div class="index-scrollMore">
+    <a href="" class="more-link">
+        <div class="more-word">More</div>
+        <div class="more-icon"></div>
+    </a>
+</div>
+<div class="index-sortBox">
+    <a href="brandServe.html" class="index-sort ani-up">品牌服务</a>
+    <a href="spaceMeichen.html" class="index-sort ani-up active">空间美陈</a>
+    <a href="mutualDesign.html" class="index-sort ani-up">交互设计</a>
+    <a href="originalIp.html" class="index-sort ani-up">原创IP</a>
+</div>
+<div class="foot-box">厦门大美成华艺术设计有限公司</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/common.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-index', {
+        speed:500,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },//可选选项，自动滑动
+        loop : true,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    });
+</script>
+</body>
+</html>
