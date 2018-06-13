@@ -12,59 +12,70 @@
 
 .head-logo{
     float: left;
-    width: 4rem;
-    height: 2rem;
+    width: 3.4rem;
+    height: 1.7rem;
 }
 
 .head-itemBox{
     float: right;
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 .head-item{
+    width: 2rem;
     height: .5rem;
-    line-height: .5rem;
-    padding: 0 .3rem;
-    font-size: .5rem;
-    color: #5c5c5c;
-    text-transform: uppercase;
-    border-right: 1px solid #5c5c5c;
 }
-.head-item:last-child{
-    border: none;
+.head-dmart{
+    background: url("../images/dmart-bg.png") right center no-repeat;
+    background-size: auto 100%;
 }
-.head-item.active{
-    color: #CB3447;
+.head-dmart:active{
+    background-image: url("../images/dmart-bgActive.png");
+}
+.head-dmart.active{
+    background-image: url("../images/dmart-bgActive.png");
+}
+.head-home{
+    background: url("../images/home-bg.png") left center no-repeat;
+    background-size: auto 100%;
+}
+.head-home:active{
+    background-image: url("../images/home-bgActive.png");
+}
+.head-home.active{
+    background-image: url("../images/home-bgActive.png");
 }
 .foot-box{
-    line-height: .5rem;
-    font-size: .5rem;
-    text-align: center;
-    padding: .8rem 0;
-    color: #9B9B9B;
-    font-weight: bold;
+    height: 2rem;
+    background: url("../images/company-name.png") center center no-repeat;
+    background-size: auto .5rem;
 }
 
 .head-black{
     background-color: #242833;
 }
+.head-black .head-item:active{
+    color: #fff;
+}
+.head-black .head-item.active{
+    color: #fff;
+}
 
 /*首页*/
 .swiper-index img {
     width: 100%;
-    /*min-height: 7rem;*/
-    /*max-height: 9.5rem;*/
-    height: 10rem;
+    height: 10.55rem;
 }
 .swiper-pagination-bullet-active{
     background: none;
     border: 2px solid #fff;
 }
 .index-scrollBox{
-    margin-top: .4rem;
+    margin-top: .2rem;
     overflow-x: scroll;
     white-space: nowrap;
+    font-size: 0;
 }
 .index-scroll{
     display: inline-block;
@@ -73,30 +84,18 @@
     background-color: #333;
     opacity: .8;
     border-radius: .2rem;
+    margin-right: .4rem;
 }
 .index-scrollMore{
     width: 90%;
     margin: 0 auto;
     padding: .4rem 0;
-    border-bottom: 2px solid #383A3E;
+    border-bottom: 1px solid #383A3E;
     overflow: hidden;
 }
 .more-link{
     float: right;
-    overflow: hidden;
-}
-.more-word{
-    float: left;
-    height: .5rem;
-    line-height: .5rem;
-    margin-right: .2rem;
-    color: #383A3E;
-    font-size: .5rem;
-    font-weight: bold;
-}
-.more-icon{
-    float: left;
-    width: 1rem;
+    width: 2.6rem;
     height: .5rem;
     background: url("../images/morebg.png") center center no-repeat;
     background-size: 100% auto;
@@ -104,25 +103,39 @@
 
 .index-sortBox{
     width: 90%;
-    margin: 1.2rem auto 0;
+    margin: .3rem auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .index-sort{
-    width: 48%;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    margin-bottom: .5rem;
+    width: 49%;
+    height: 5rem;
+    line-height: 5rem;
+    margin-bottom: .3rem;
     background-color: #474A54;
     border-radius: .2rem;
     text-align: center;
     font-size: 1rem;
     color: #717277;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 1.2rem;
 }
 .index-sort.active{
-    color: #fff;
     background-color: #CB3447;
+}
+.brand-bg.active{
+    background-image: url("../images/brand@3x-active.png");
+}
+.space-bg.active{
+    background-image: url("../images/space@3x-active.png");
+}
+.design-bg.active{
+    background-image: url("../images/design@3x-active.png");
+}
+.ip-bg.active{
+    background-image: url("../images/ip@3x-active.png");
 }
 
 /*animate*/
@@ -157,20 +170,11 @@
 .in-banner{
     width: 100%;
 }
-.dmart-en{
-    margin-top: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-}
 .dmart-ch{
-    margin-bottom: 1rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    font-size: 1rem;
-    color: #9b9b9b;
-    font-weight: bold;
+    margin: 1.2rem auto;
+    height: 2.3rem;
+    background: url("../images/Group@3x.png") left center no-repeat;
+    background-size: auto 100%;
 }
 .dmart-short{
     margin-top: 1rem;
@@ -188,22 +192,35 @@
 }
 
 /*brandserve*/
-.dmart-en2{
-    padding-top: .5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
+.dmart-en{
+    margin-bottom: .5rem;
+    height: 2rem;
+    background: url("../images/dmart-tip.png") center bottom no-repeat;
+    background-size: auto 1.3rem;
 }
 .dmart-zh{
-    margin-bottom: 1rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
+    margin-bottom: 1.6rem;
+    height: 1rem;
+    line-height: 1rem;
     font-size: 1rem;
     color: #9b9b9b;
     font-weight: bold;
     text-align: center;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.brand-bg{
+    background-image: url("../images/brand@3x.png");
+}
+.design-bg{
+    background-image: url("../images/design@3x.png");
+}
+.space-bg{
+    background-image: url("../images/space@3x.png");
+}
+.ip-bg{
+    background-image: url("../images/ip@3x.png");
 }
 .brand-sortBox{
     display: flex;
@@ -224,9 +241,9 @@
     justify-content: space-between;
 }
 .in-item{
-    width: 48%;
-    height: 4.5rem;
-    margin-bottom: .5rem;
+    width: 49%;
+    height: 5rem;
+    margin-bottom: .3rem;
     background-color: #fff;
     border-radius: .2rem;
 }
@@ -330,7 +347,7 @@
     text-align: center;
 }
 .mt3{
-    margin-top: 3rem;
+    margin-top: 2.7rem;
 }
 .mb4{
     margin-bottom: 4rem;
