@@ -122,19 +122,19 @@
     background-repeat: no-repeat;
     background-size: auto 1.2rem;
 }
-.index-sort.active{
+.index-sort:active{
     background-color: #CB3447;
 }
-.brand-bg.active{
+.index-sort.brand-bg:active{
     background-image: url("../images/brand@3x-active.png");
 }
-.space-bg.active{
+.index-sort.space-bg:active{
     background-image: url("../images/space@3x-active.png");
 }
-.design-bg.active{
+.index-sort.design-bg:active{
     background-image: url("../images/design@3x-active.png");
 }
-.ip-bg.active{
+.index-sort.ip-bg:active{
     background-image: url("../images/ip@3x-active.png");
 }
 
@@ -230,7 +230,7 @@
     font-size: .6rem;
     color: #9b9b9b;
 }
-.brand-sort.active{
+.brand-sort:active{
     color: #E4344A;
 }
 
